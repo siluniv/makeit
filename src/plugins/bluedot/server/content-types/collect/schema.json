@@ -1,0 +1,38 @@
+{
+  "collectionName": "bluedot_collects",
+  "kind": "collectionType",
+  "info": {
+    "displayName": "Collect",
+    "singularName": "collect",
+    "pluralName": "collects",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    },
+    "content-type-builder": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "site_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "log": {
+      "type": "string"
+    }
+  }
+}

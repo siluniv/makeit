@@ -1,0 +1,55 @@
+{
+  "collectionName": "bluedot_members",
+  "kind": "collectionType",
+  "info": {
+    "displayName": "Member",
+    "singularName": "member",
+    "pluralName": "members",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "site_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "uuid": {
+      "type": "uid",
+      "minLength": 36,
+      "maxLength": 36,
+      "required": true,
+      "unique": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100,
+      "required": true
+    },
+    "avatar_image": {
+      "type": "text"
+    },
+    "status": {
+      "type": "string"
+    },
+    "origin_created_at": {
+      "type": "datetime"
+    },
+    "origin_updated_at": {
+      "type": "datetime"
+    }
+  }
+}

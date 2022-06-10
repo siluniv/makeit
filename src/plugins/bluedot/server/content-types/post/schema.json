@@ -1,0 +1,75 @@
+{
+  "collectionName": "bluedot_posts",
+  "kind": "collectionType",
+  "info": {
+    "displayName": "Post",
+    "singularName": "post",
+    "pluralName": "posts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "site_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "uuid": {
+      "type": "uid",
+      "minLength": 36,
+      "maxLength": 36,
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "required": true
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "feature_image": {
+      "type": "text"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "text"
+    },
+    "visibility": {
+      "type": "text"
+    },
+    "comment_count": {
+      "type": "integer",
+      "default": 0
+    },
+    "origin_created_at": {
+      "type": "datetime"
+    },
+    "origin_updated_at": {
+      "type": "datetime"
+    },
+    "origin_published_at": {
+      "type": "datetime"
+    },
+    "canonical_url": {
+      "type": "text"
+    }
+  }
+}
